@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .widget {
+        @apply bg-white shadow-md p-4 rounded-lg w-1/4;
+      }
+      
+      .widget-title {
+        @apply text-lg font-bold;
+      }
+      
+      .widget-content {
+        @apply text-gray-600;
+      }
+      .card1{
+        @apply bg-red-500 relative cursor-pointer w-[300px] h-[380px] m-2 rounded-lg overflow-hidden border-green-100 border-2;
+    
+      }
+      .card{
+        @apply flex flex-col w-full p-4 border-viridian border-[1px] hover:border-russianviolet;
+      }
+      .card-title{
+        @apply mb-2 text-xl font-semibold text-hgreen  group-hover:text-russianviolet;
+      }
+      .card-subtext{
+        @apply text-base text-hgreen group-hover:text-russianviolet;
+      }
+      
+}
+@layer utilities{
+    .grid-type{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    width:100%;
+    gap:32px;
+    /*display:flex;*/
+}
+}
