@@ -4,34 +4,51 @@
 
 @layer components{
     .widget {
-        @apply bg-white shadow-md p-4 rounded-lg w-1/4;
+        @apply border-purp border-[1px] px-5 py-2 rounded-lg w-[24%] shadow-md shadow-neonpurp hover:shadow-[#725295] hover:bg-opacity-40 transition-all duration-150  flex flex-col;
+      }
+      .widget2 {
+        @apply border-darkpurple border-[1px] shadow-md px-5 py-2 rounded-lg w-[24%] bg-purple-300 bg-opacity-50 hover:bg-opacity-40 transition-all duration-150  flex flex-col;
       }
       
       .widget-title {
-        @apply text-lg font-bold;
+        @apply text-lg min-h-14 font-bold text-[#5941a9];
       }
       
       .widget-content {
-        @apply text-gray-600;
+        @apply text-xs text-gray-700 min-h-12;
+      }
+      .widget-notes{
+        @apply text-viridian font-bold text-sm hover:text-[#6bc9b2] transition-all duration-100 ;
       }
       .card1{
         @apply bg-red-500 relative cursor-pointer w-[300px] h-[380px] m-2 rounded-lg overflow-hidden border-green-100 border-2;
     
       }
       .card{
-        @apply flex flex-col w-full p-4 border-viridian border-[1px] hover:border-russianviolet;
+        @apply flex flex-col w-full p-4 border-viridian border-[1px] hover:border-sage;
       }
       .card-title{
-        @apply mb-2 text-xl font-semibold text-hgreen  group-hover:text-russianviolet;
+        @apply mb-2 text-xl font-semibold text-viridian group-hover:text-sage;
       }
       .card-subtext{
-        @apply text-base text-hgreen group-hover:text-russianviolet;
+        @apply text-base text-viridian group-hover:text-sage;
       }
-      
+      .project-cards {
+        @apply flex flex-row flex-wrap items-center justify-center gap-y-4 gap-x-4 
+      }
+      .poem-container{
+        @apply text-gray-700 container block text-left mx-auto space-y-4 mb-8;
+      }
+      .poem-head{
+        @apply font-bold text-left;
+      }
+      .poem-para{
+        @apply mb-4 mt-0;
+      }
 }
 @layer utilities{
     .grid-type{
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
     width:100%;
     gap:32px;
     /*display:flex;*/

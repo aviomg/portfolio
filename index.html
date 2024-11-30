@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link href="./src/static/output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="alt_stylesheet">
 </head>
 <body class="bg-base text-puce font-serif flex flex-col min-h-screen">
   <main class="flex-grow">
     <div class="pb-5 pt-5 text-center container mx-auto text-eggplant">
         <ul class="justify-center flex space-x-4 text-viridian font-bold">
-        <li><a href="./" class="text-pink-200 hover:underline">Home</a></li>
+        <li><a href="./" class="text-puce hover:underline">Home</a></li>
         <li><a href="./pages/blog.html" class="hover:underline">Blog</a></li>
         <li><a href="./pages/notes.html" class="hover:underline"> Notes</a></li>
       </ul>
       </div>
   <!-- Hero Section -->
-  <section class="pb-16">
+  <section class="pb-20">
     <div class="container mx-auto text-center">
+
       <h2 class="text-4xl font-serif font-bold mb-4">avi kumar</h2>
       <p class="text-lg text-gray-700">third-year student at UNC Chapel Hill studying computer science and french; professional question asker; chaser of knowledge. This site is a collection of my projects, writings, thoughts, class notes, and 
         professional information. It's a space to document my journey as a computer science student, future developer/engineer, and human being.
         </p>
     </div>
+    <div class="text-center container mx-auto mt-6 text-sm text-midblue">
+      <ul class="justify-center flex space-x-3 ">
+        <li><a class="bg-pink-300 bg-opacity-25 hover:underline hover:text-[#6392e9] duration-100 p-2 border-[1px] border-midblue shadow-md rounded-lg hover:border-lighterblue" href="https://www.linkedin.com/in/jahnavikumar/" target="_blank">Linkedin</a> </li>  
+        <li><a class="bg-pink-300 bg-opacity-25 hover:underline hover:text-[#6392e9] duration-100 p-2 border-[1px] border-midblue shadow-md rounded-lg hover:border-lighterblue" href="https://www.github.com/aviomg" target="_blank">Github</a> </li>
+        <li><a class="bg-pink-300 bg-opacity-25 hover:underline hover:text-[#6392e9] duration-100 p-2 border-[1px] border-midblue shadow-md rounded-lg hover:border-lighterblue" href="mailto:avikumar2048@gmail.com" target="_blank">avikumar2048@gmail.com</a> </li>
+        <li><a class="bg-pink-300 bg-opacity-25 hover:underline hover:text-[#6392e9] duration-100 p-2 border-[1px] border-midblue shadow-md rounded-lg hover:border-lighterblue" href="./assets/resume-avi-kumar.pdf" target="_blank">Resume</a> </li>
+      </ul>
+    </div>
   </section>
-
+  
+ 
   <!-- <section class="grid grid-cols-3">
   <a class="card" href="https://studio-keys.onrender.com" target="_blank">
     <span class="card-title">Studio Keys</span>
@@ -36,17 +48,105 @@
     <span>hello1</span>
   </div>
 </section> -->
-<section class="px-6">
-<h2 class="font-extrabold mb-5 text-2xl text-viridian">Projects</h2>
+<section id="projects" class="px-6 pb-20">
+<h2 class="font-extrabold mb-5 text-2xl text-midblue">Projects</h2>
 <section class="grid grid-type py-2">
-  <a class="group card" href="https://studio-keys.onrender.com" target="_blank">
+  <a id="project_1" class="group card" href="https://studio-keys.onrender.com" target="_blank">
     <span class="card-title">Studio Keys</span>
     <span class="card-subtext">A Python-based tool designed to enable the easy retrieval and recovery 
       of UI/UX designs created with the (now) defunct Invision prototyping tool.</span>
   </a>
+  <a id="project_2" class="group card" href="https://youtu.be/5HTkijZrJAc?si=a7blwTyL7nJWt4zG" target="_blank">
+    <span class="card-title">CSXL Student Showcase Board</span>
+    <span class="card-subtext">My team's final project for COMP 590 involved designing and 
+      implementing a feature for the UNC CSXL website that allows students to showcase their projects and explore others' work in a 
+      centralized, interactive feed. Click to watch our demo video!</span>
+  </a>
+</section>
+</section>
+
+<section class="px-6 pt-2 pb-6">
+<h2 class="font-extrabold text-2xl text-[#2d5baf] mb-3">Coursework</h2>
+<div id="classes" class="py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4">
+  <div class="widget">
+    <h1 class="widget-title">COMP 560: Artificial Intelligence</h1>
+    <p class="widget-content italic">Coming Soon (Spring 2025)</p>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 541: Digital Logic</h1>
+    <p class="widget-content italic">Coming Soon (Spring 2025)</p>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 550: Algorithms and Analysis</h1>
+    <p class="widget-content">Key Topics: Problem-solving paradigms, Computational complexity, Algorithm design</p>
+    <a href="./notes/comp550.html" class="widget-notes">notes</a>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 435: Computer Security Concepts</h1>
+    <p class="widget-content">Key Topics: The CIA triad; Cryptography; Software, Network, and OS security</p>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 311: Computer Organization</h1>
+    <p class="widget-content">Key Topics: Assembly Programming, Microprocessor and CPU Design, Combinational and Sequential Logic</p>
+    <a href="./notes/comp311.html" class="widget-notes">notes</a>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 590: Foundations of Software Engineering</h1>
+    <p class="widget-content">Key Topics: Agile Project Management, Full-stack & Production-grade Development, Technical Communication, 
+      Automation and Code Review</p>
+      <a href="./notes/comp590.html" class="widget-notes">notes</a>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 455: Models of Languages and Computation</h1>
+    <p class="widget-content">Key Topics: Automata, Computability, and Complexity theories; Reducibility; Time and Space Complexity</p>
+      <a href="./notes/comp455.html" class="widget-notes">notes</a>
   
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 301: Foundations of Programming</h1>
+    <p class="widget-content">Key Topics: Object-Oriented Programming, Exception handling, Software Testing, Design Patterns </p>
+    <a href="./notes/comp301.html" class="widget-notes">notes</a>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 211: Systems Fundamentals</h1>
+    <p class="widget-content">Key Topics: Systems Programming (C), Compilation system, Physical/Virtual memory, OS basics </p>
+    <a href="./notes/comp211.html" class="widget-notes">notes</a>
+
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 210: Data Structures and Analysis</h1>
+    <p class="widget-content">Key Topics: Fundamental Data structures, Big-O Notation and Algorithm Analysis</p>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 283: Discrete Structures</h1>
+    <p class="widget-content">Key Topics: Combinatorics; Sets, tuples, etc.; Logic and Proof Techniques</p>
+  </div>
 </section>
-</section>
+
+  <!--<div class="widget">
+    <h1 class="widget-title">COMP 211: Systems Fundamentals</h1>
+    <p class="widget-content text-sm text-gray-700">
+      Key Topics: C Programming, Operating Systems Basics, Binary Arithmetic and Information Representation
+    </p>
+    <div class="widget-links flex space-x-2 mt-2">
+      <a href="notes/comp211.html" class="text-blue-600 hover:underline">View Notes</a>
+      <a href="projects/comp211-project.html" class="text-blue-600 hover:underline">View Project</a>
+    </div>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 211: Systems Fundamentals</h1>
+    <div class="widget-links flex space-x-2 mt-2">
+      <a href="notes/comp211.html" class="text-blue-600 hover:underline">View Notes</a>
+      <a href="projects/comp211-project.html" class="text-blue-600 hover:underline">View Project</a>
+    </div>
+  </div> -->
+    
+ 
+  
+
+  
+
+</div>
 </main>
 
   <!-- About the Site Section -->
@@ -54,10 +154,13 @@
 
 
   <!-- Footer -->
-  <footer class="bg-pink-200 text-white py-6">
+  <footer class="bg-pink-200 text-white py-4">
     <div class="container mx-auto text-center">
       <p>&copy; 2024 Avi Kumar. All rights reserved.</p>
     </div>
   </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

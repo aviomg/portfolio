@@ -5,23 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../src/static/output.css" rel="stylesheet">
 </head>
-<body class="bg-base text-puce font-serif">
+<body class="bg-base text-puce font-serif flex flex-col min-h-screen">
+
+  <main class="flex-grow">
   <div class="pb-5 pt-5 text-center container mx-auto text-eggplant">
     <ul class="justify-center flex space-x-4 text-viridian font-bold">
     <li><a href="../" class="hover:underline">Home</a></li>
-    <li><a href="./blog.html" class="text-pink-200 hover:underline"> Blog</a></li>
+    <li><a href="./blog.html" class="text-puce hover:underline"> Blog</a></li>
     <li><a href="./notes.html" class="hover:underline"> Notes</a></li>
   </ul>
   </div>
 <!-- Hero Section -->
-<section class="pb-16">
+<section class="pb-6">
 <div class="container mx-auto text-center">
   <h2 class="text-4xl font-serif font-bold mb-4">avi kumar</h2>
   <p class="text-lg text-gray-700">a place to host, categorize, and document some of the things I do 
     and think and make. a place to document my life, should someone someday be interested. 
-    I know I'll be. My memory isn't great.</p>
+    I know I'll be; my memory isn't great.</p>
 </div>
 </section>
+
+<div class="flex justify-center items-center gap-4 mb-8 text-center">
+  <a href="./crochet.html" class="inline-block w-1/5">
+    <img src="../assets/IMG_9727.jpeg" alt="Image 2" class="w-full h-[300px] object-cover overflow-clip rounded-sm shadow-puce hover:shadow-pink-600 shadow-md border-2 border-puce">
+    <h1 class="mt-2 text-center text-viridian">(click for more crochet)</h1>
+  </a>
+</div>
+
+
+<div name="thumbnail" class="max-w-4xl mx-auto py-10 px-6 bg-puce bg-opacity-20 text-center">
+  <a href="./entries.html">
+    <h1 class="text-viridian text-xl font-bold">Blog</h1>
+  </a>
+  
+  
+  <div id="poetry-preview" class="text-left text-gray-700">
+
+  </div>
+</div>
+
   
   <!-- <header class="bg-opacity-40 bg-viridian text-white">
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
@@ -48,7 +70,7 @@
   
 
 
-
+</main>
 
   <!-- Footer -->
   <footer class="mt-10 bg-pink-200 text-white py-4">
@@ -56,5 +78,8 @@
       <p>&copy; 2024 Avi Kumar. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="../src/render2.js"></script>
+
 </body>
 </html>
