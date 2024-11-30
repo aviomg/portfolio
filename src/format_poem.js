@@ -28,8 +28,14 @@ header.id = "heading";
 const lines = text.split('\n');
 
 const title = document.createElement('p');
+const title1 = document.createElement('p');
 title.textContent = lines[0].trim();
+flag = lines[1] != null;
 header.appendChild(title);
+if(flag){
+  title1.textContent = lines[1].trim();
+  header.appendChild(title1);
+}
 article.appendChild(header);
 
 const container = document.createElement('div');
@@ -73,12 +79,6 @@ paragraphDiv.classList.add('poem-para');
   //return container
 }
 
-
-
-
-
-
-
 function generatePoemHTML(poemsfile) {
   console.log("running genpoemhtml");
   const container = document.createElement('div');
@@ -97,25 +97,35 @@ function generatePoemHTML(poemsfile) {
   return container; // Return the container with all poems
 }
 
-
+function format_poem(num_new){
 fetch('../assets/nyc.txt')
 .then((response) => response.text())
 .then((fileContent => {
     const poems = splitPoemsFromText(fileContent);
+    const newEntriesContainer = document.getElementById('entries');
+    for(i=0;i<num_new;i++){
+      const poemDiv = createPoemDiv(poems[i]);
+      newEntriesContainer.appendChild(poemDiv);
+    }
     const entriesContainer = document.getElementById('archived-entries');
-    poems.forEach((poem)=>{
+    console.log(poems.length);
+    for(i=num_new;i<poems.length;i++){
+      const poemDiv = createPoemDiv(poems[i]);
+      entriesContainer.appendChild(poemDiv);
+    }
+   /* poems.forEach((poem, index=num_new)=>{
         const poemDiv = createPoemDiv(poem);
         entriesContainer.appendChild(poemDiv);
-    })
+    })*/
 })).catch((err)=>{
     console.error('Error fetching or processing the .txt file:', err);
     document.getElementById('archived-entries').textContent = 'Failed to load poems.';
 });
 //window.generatePoemHTML = generatePoemHTML;
-
+}
 // Export the function so it can be used in other files
 
-
+format_poem(2);
 /*
 const poem = `routine (revised 11/21 and 12/3)
 

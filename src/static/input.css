@@ -4,7 +4,7 @@
 
 @layer components{
     .widget {
-        @apply border-purp border-[1px] px-5 py-2 rounded-lg w-[24%] shadow-md shadow-neonpurp hover:shadow-[#725295] hover:bg-opacity-40 transition-all duration-150  flex flex-col;
+        @apply  px-5 py-2 rounded-lg w-[24%] shadow-md bg-purple-300 bg-opacity-30 shadow-neonpurp hover:shadow-[#725295] hover:bg-opacity-40 transition-all duration-150  flex flex-col;
       }
       .widget2 {
         @apply border-darkpurple border-[1px] shadow-md px-5 py-2 rounded-lg w-[24%] bg-purple-300 bg-opacity-50 hover:bg-opacity-40 transition-all duration-150  flex flex-col;
@@ -18,32 +18,48 @@
         @apply text-xs text-gray-700 min-h-12;
       }
       .widget-notes{
-        @apply text-viridian font-bold text-sm hover:text-[#6bc9b2] transition-all duration-100 ;
+        @apply text-viridian font-bold text-sm hover:text-[#6bc9b2] transition-all duration-75 ;
       }
       .card1{
         @apply bg-red-500 relative cursor-pointer w-[300px] h-[380px] m-2 rounded-lg overflow-hidden border-green-100 border-2;
     
       }
-      .card{
+      .card2{
         @apply flex flex-col w-full p-4 border-viridian border-[1px] hover:border-sage;
       }
-      .card-title{
+      .card-title2{
         @apply mb-2 text-xl font-semibold text-viridian group-hover:text-sage;
       }
-      .card-subtext{
+      .card-subtext2{
         @apply text-base text-viridian group-hover:text-sage;
       }
+      .card{
+        @apply flex flex-col w-full p-4 border-viridian border-[1px] hover:border-red-300;
+      }
+      .card-title{
+        @apply mb-2 text-xl font-semibold text-viridian group-hover:text-red-300;
+      }
+      .card-subtext{
+        @apply text-base text-viridian group-hover:text-red-300;}
       .project-cards {
         @apply flex flex-row flex-wrap items-center justify-center gap-y-4 gap-x-4 
       }
       .poem-container{
-        @apply text-gray-700 container block text-left mx-auto space-y-4 mb-8;
+        @apply text-gray-700 container block text-left mx-auto space-y-1 mb-8;
       }
+      .preview-poem-container{ 
+        @apply  border-b  pt-4 pb-4 text-gray-700 container block text-left mx-auto space-y-0 ;}
       .poem-head{
         @apply font-bold text-left;
       }
       .poem-para{
         @apply mb-4 mt-0;
+      }
+      .poetry-preview{
+        @apply text-left text-gray-700;
+      }
+      .preview-title{
+        @apply text-black  hover:underline transition-all duration-100 mt-3;
       }
 }
 @layer utilities{
