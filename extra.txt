@@ -1,0 +1,8 @@
+colors to save:
+- bg-red-300
+gray-700 for text
+
+[#4a9985]
+
+widgets:
+justify-evenly, justify-between, 
