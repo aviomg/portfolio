@@ -13,7 +13,7 @@ function splitPoemsFromText(fileContent) {
   }
 
 
-var counter = 3;
+var counter = 1;
 function createPoemDiv(text){
 const article = document.createElement('article');
 id = "poem" + counter.toString()
@@ -113,7 +113,7 @@ fetch('../assets/nyc.txt')
       const poemDiv = createPoemDiv(poems[i]);
       entriesContainer.appendChild(poemDiv);
     }
-
+    scrolltoHash();
     
    /* poems.forEach((poem, index=num_new)=>{
         const poemDiv = createPoemDiv(poem);
@@ -140,9 +140,8 @@ function scrolltoHash(){
 }
 
 // Export the function so it can be used in other files
-scrolltoHash();
-console.log(window.location.hash);
-console.log("hello??");
+
+
 format_poem(2);
 /*
 const poem = `routine (revised 11/21 and 12/3)
