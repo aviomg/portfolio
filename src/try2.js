@@ -1,4 +1,6 @@
 // Function to split the poems from the .txt file
+function helloworld(){alert("hello");}
+
 function splitPoemsFromText(fileContent) {
     return fileContent.split('\n\n\n').map((poem) => poem.trim());
   }
@@ -117,7 +119,7 @@ function splitPoemsFromText(fileContent) {
 
         counter = 0;
         ind = 0;
-  
+        
         poems.forEach((poem, index=2) => {
           if(counter<numPoems){  
           const articleId = `poem${index + 1}`;
@@ -132,7 +134,55 @@ function splitPoemsFromText(fileContent) {
         previewContainer.textContent = 'Error loading poetry previews.';
       });
   }
-  
+
+  document.getElementById('loadmore').addEventListener('click', () => {
+    load_more();
+});
+
+function load_more() {
+    articles = document.querySelectorAll('article');
+    last_rendered = articles.length;
+    console.log(last_rendered);
+
+    fetch('../assets/nyc.txt').then((response) => response.text()).then((fileContent) => {
+      const poems = splitPoemsFromText(fileContent);
+      const previewContainer = document.querySelector('#poetry-preview');
+      //on last call, lastrendered = 16 and ...there are 16 poems
+      if((last_rendered + 5) >= poems.length){
+        curr_button = document.getElementById('loadmore');
+        const parentElement = curr_button.parentElement;
+        const h1 = curr_button.querySelector('h1');
+        h1.textContent = "see all";
+        h1.classList.remove("bg-lighterblue");
+        h1.classList.add("bg-[#abc8ff]");
+        console.log(h1.textContent);
+        new_button = document.createElement('a');
+        new_button.href = "./entries.html";
+        new_button.appendChild(h1);
+        curr_button.remove();
+        parentElement.appendChild(new_button);
+        console.log("ok");
+      }
+      
+      counter = 0;
+      ind = last_rendered;
+      for(i=last_rendered;i<poems.length;i++){
+        if(counter<5){
+          const articleId = `poem${ind + 1}`;
+          const art = createSneakPeekArticle(poems[i],articleId,60,ind+1);
+          previewContainer.appendChild(art);
+          ind++;
+          counter++;}
+      }
+    })
+    .catch((err) => {
+      console.error('Failed to load and process .txt file:', err);
+      const previewContainer = document.querySelector(previewContainerId);
+      previewContainer.textContent = 'Error loading poetry previews.';
+    });
+}  
+
+ 
   // Initialize sneak peeks
   generateSneakPeeksFromTxt('../assets/nyc.txt', '#poetry-preview', 60,5);
   
