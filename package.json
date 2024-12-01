@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server",
+    "build":"node build.js",
     "build1": "npx tailwindcss -i ./src/static/input.css -o ./src/static/output.css --watch"
   },
   "keywords": [],
