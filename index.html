@@ -6,10 +6,25 @@
   <title>Avi Kumar | Home</title>
   <link rel="icon" href="./assets/laptop.png">
   <link href="./src/static/output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+
 </head>
+
+<header class="h-[100vh] min-h-[350px] bg-puce flex flex-col justify-center">
+  <div class="w-[70%] m-auto">
+    <h1 class="block text-5xl font-bold text-[#f1f1f1]">
+      Avi Kumar
+      <span class="block text-3xl text-[#3a6d5b] font-normal">student, software engineer, writer, professional question asker</span>
+      <div class="mt-[50px] mb-[-80px] text-[#3a6d5b] text-lg ">
+        welcome to my page!
+      </div>
+    </h1>
+  </div>
+</header>
+
 <body class="bg-base text-puce font-serif flex flex-col min-h-screen">
   <main class="flex-grow">
-    <div class="pb-5 pt-5 text-center container mx-auto text-eggplant">
+    <div id="cont" class="pb-5 pt-5 text-center container mx-auto text-eggplant">
         <ul class="justify-center flex space-x-4 text-viridian font-bold">
         <li><a href="./" class="text-puce hover:underline">Home</a></li>
         <li><a href="./pages/blog.html" class="hover:underline">Blog</a></li>
@@ -20,7 +35,7 @@
   <section class="pb-20">
     <div class="container mx-auto text-center">
 
-      <h2 class="text-4xl font-serif font-bold mb-4">avi kumar</h2>
+      <h2  class="text-4xl font-serif font-bold mb-4">avi kumar</h2>
       <p class="text-lg text-gray-700">third-year student at UNC Chapel Hill studying computer science and french; professional question asker; chaser of knowledge. This site is a collection of my projects, writings, thoughts, class notes, and 
         professional information. It's a space to document my journey as a computer science student, future developer/engineer, and human being.
         </p>
@@ -79,7 +94,10 @@
   <div class="widget">
     <h1 class="widget-title">COMP 550: Algorithms and Analysis</h1>
     <p class="widget-content">Key Topics: Problem-solving paradigms, Computational complexity, Algorithm design</p>
-    <a href="./notes/comp550.html" class="widget-notes">notes</a>
+    <div class="flex gap-1">
+    <a href="./notes/comp550.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
+    <a href="./notes/code.html" class="widget-notes"><pre class="code-block language-python max-w-fit !bg-transparent !py-0 !mr-1 !text-viridian !px-0"><code class="code-notes">code</code></pre></a>
+    </div>
   </div>
   <div class="widget">
     <h1 class="widget-title">COMP 435: Computer Security Concepts</h1>
@@ -88,29 +106,29 @@
   <div class="widget">
     <h1 class="widget-title">COMP 311: Computer Organization</h1>
     <p class="widget-content">Key Topics: Assembly Programming, Microprocessor and CPU Design, Combinational and Sequential Logic</p>
-    <a href="./notes/comp311.html" class="widget-notes">notes</a>
+    <a href="./notes/comp311.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
   </div>
   <div class="widget">
     <h1 class="widget-title">COMP 590: Foundations of Software Engineering</h1>
     <p class="widget-content">Key Topics: Agile Project Management, Full-stack & Production-grade Development, Technical Communication, 
       Automation and Code Review</p>
-      <a href="./notes/comp590.html" class="widget-notes">notes</a>
+      <a href="./notes/comp590.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
   </div>
   <div class="widget">
     <h1 class="widget-title">COMP 455: Models of Languages and Computation</h1>
     <p class="widget-content">Key Topics: Automata, Computability, and Complexity theories; Reducibility; Time and Space Complexity</p>
-      <a href="./notes/comp455.html" class="widget-notes">notes</a>
+      <a href="./notes/comp455.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
   
   </div>
   <div class="widget">
     <h1 class="widget-title">COMP 301: Foundations of Programming</h1>
     <p class="widget-content">Key Topics: Object-Oriented Programming, Exception handling, Software Testing, Design Patterns </p>
-    <a href="./notes/comp301.html" class="widget-notes">notes</a>
+    <a href="./notes/comp301.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
   </div>
   <div class="widget">
     <h1 class="widget-title">COMP 211: Systems Fundamentals</h1>
     <p class="widget-content">Key Topics: Systems Programming (C), Compilation system, Physical/Virtual memory, OS basics </p>
-    <a href="./notes/comp211.html" class="widget-notes">notes</a>
+    <a href="./notes/comp211.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
 
   </div>
   <div class="widget">
@@ -159,6 +177,8 @@
       <p>&copy; 2024 Avi Kumar. All rights reserved.</p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 
 </body>
 </html>
