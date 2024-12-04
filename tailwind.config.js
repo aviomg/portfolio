@@ -3,6 +3,9 @@ module.exports = {
   content: ["./pages/**/*.{html,js}","./notes/**/*.{html,js}","./index.html", "./src/**/*.{html,js}","./src/render_entries.js"],
   theme: {
     extend: {
+      screens:{
+        'ipad-pro':'1366px',
+      },
       colors:{
         base:'#F1F1F1',
         puce:'#b48291',

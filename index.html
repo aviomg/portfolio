@@ -10,7 +10,7 @@
 
 </head>
 
-<header class="h-[100vh] min-h-[350px] bg-puce flex flex-col justify-center">
+<header class="h-[100vh] min-h-[350px] w-full bg-puce flex flex-col justify-center px-4 sm:px-0">
   <div class="w-[70%] m-auto">
     <h1 class="block text-5xl font-bold text-[#f1f1f1]">
       Avi Kumar
@@ -33,21 +33,46 @@
       </div>
   <!-- Hero Section -->
   <section class="pb-20">
-    <div class="container mx-auto text-center">
+    <div class="container sm:mx-auto p-2 sm:p-0  sm:text-center sm:container text-center">
 
       <h2  class="text-4xl font-serif font-bold mb-4">avi kumar</h2>
-      <p class="text-lg text-gray-700">third-year student at UNC Chapel Hill studying computer science and french. This site is a collection of my projects, notes, thoughts,
+      <p class="text-lg text-gray-700 px-10">third-year student at UNC Chapel Hill studying computer science and french. This site is a collection of my projects, notes, thoughts,
          professional information, and more. It's a space to document my journey as a computer science student, future developer/engineer, and human being. thanks for visiting!
         </p>
     </div>
     <div class="text-center container mx-auto mt-6 text-sm text-viridian">
-      <ul class="justify-center flex space-x-3 ">
-        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 p-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="https://www.linkedin.com/in/jahnavikumar/" target="_blank">Linkedin</a> </li>  
-        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 p-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="https://www.github.com/aviomg" target="_blank">Github</a> </li>
-        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 p-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="mailto:avikumar2048@gmail.com" target="_blank">avikumar2048@gmail.com</a> </li>
-        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 p-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="./assets/resume-avi-kumar.pdf" target="_blank">Resume</a> </li>
+      <ul class="flex flex-wrap justify-center gap-1 gap-y-4 sm:gap-3 px-1 sm:p-0">
+        <li>
+          <a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" 
+             href="https://www.linkedin.com/in/jahnavikumar/" 
+             target="_blank">Linkedin</a>
+        </li>
+        <li>
+          <a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" 
+             href="https://www.github.com/aviomg" 
+             target="_blank">Github</a>
+        </li>
+        <li>
+          <a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" 
+             href="mailto:avikumar2048@gmail.com" 
+             target="_blank">avikumar2048@gmail.com</a>
+        </li>
+        <li>
+          <a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" 
+             href="./assets/resume-avi-kumar.pdf" 
+             target="_blank">Resume</a>
+        </li>
       </ul>
     </div>
+    
+   <!-- <div class="text-center container mx-auto mt-6 text-sm text-viridian ">
+      <ul class="justify-center flex sm:space-x-3 space-x-1 px-1 sm:p-0">
+        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="https://www.linkedin.com/in/jahnavikumar/" target="_blank">Linkedin</a> </li>  
+        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="https://www.github.com/aviomg" target="_blank">Github</a> </li>
+        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="mailto:avikumar2048@gmail.com" target="_blank">avikumar2048@gmail.com</a> </li>
+        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="./assets/resume-avi-kumar.pdf" target="_blank">Resume</a> </li>
+      </ul>
+    </div>-->
   </section>
   
  
@@ -65,7 +90,8 @@
 </section> -->
 <section id="projects" class="px-6 pb-16">
 <h2 class="font-extrabold mb-5 text-2xl text-midblue">Projects</h2>
-<section class="grid grid-type py-2">
+<section class="sm:grid sm:grid-type py-2  justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4">
+ <!-- <section class="py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4">-->
   <a id="project_1" class="group card" href="https://studio-keys.onrender.com" target="_blank">
     <span class="card-title">Studio Keys</span>
     <span class="card-subtext">A Python-based tool designed to enable the easy retrieval and recovery 
@@ -82,7 +108,7 @@
 
 <section class="px-6 pt-2 pb-8">
 <h2 class="font-extrabold text-2xl text-[#2d5baf] mb-3">Coursework</h2>
-<div id="classes" class="py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4">
+<div id="classes" class="py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4 lg:max-xl:justify-center">
   <div class="widget">
     <h1 class="widget-title">COMP 560: Artificial Intelligence</h1>
     <p class="widget-content italic">Coming Soon (Spring 2025)</p>
