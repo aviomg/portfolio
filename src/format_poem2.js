@@ -141,7 +141,7 @@ fetch('../assets/nyc.txt')
       }
       else{
         const divpink = document.createElement('div');
-        divpink.classList.add("bg-viridian","rounded","bg-opacity-60");
+        divpink.classList.add("bg-pink-200","rounded","bg-opacity-30");
         divpink.appendChild(poemDiv);
         newEntriesContainer.appendChild(divpink);
       }
