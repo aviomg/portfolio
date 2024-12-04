@@ -128,17 +128,46 @@ function format_poem(num_new){
 fetch('../assets/nyc.txt')
 .then((response) => response.text())
 .then((fileContent => {
+    var counter = 0;
     const poems = splitPoemsFromText(fileContent);
     const newEntriesContainer = document.getElementById('entries');
     for(i=0;i<num_new;i++){
       const poemDiv = createPoemDiv(poems[i]);
-      newEntriesContainer.appendChild(poemDiv);
+      if(counter%2 == 0){
+        const divpuce = document.createElement('div');
+        divpuce.classList.add("bg-puce","rounded","bg-opacity-50");
+        divpuce.appendChild(poemDiv);
+        newEntriesContainer.appendChild(divpuce);
+      }
+      else{
+        const divpink = document.createElement('div');
+        divpink.classList.add("bg-viridian","rounded","bg-opacity-60");
+        divpink.appendChild(poemDiv);
+        newEntriesContainer.appendChild(divpink);
+      }
+      counter++;
+    //  newEntriesContainer.appendChild(poemDiv);
     }
     const entriesContainer = document.getElementById('archived-entries');
     //console.log(poems.length);
     for(i=num_new;i<poems.length;i++){
       const poemDiv = createPoemDiv(poems[i]);
-      entriesContainer.appendChild(poemDiv);
+      if(counter%2 == 0){
+        const divpuce = document.createElement('div');
+        divpuce.classList.add("bg-puce","rounded","bg-opacity-50");
+        divpuce.appendChild(poemDiv);
+        entriesContainer.appendChild(divpuce);
+      }
+      else{
+        const divpink = document.createElement('div');
+        divpink.classList.add("bg-pink-200","rounded","bg-opacity-30");
+        divpink.appendChild(poemDiv);
+        entriesContainer.appendChild(divpink);
+      }
+      counter++;
+      
+
+      //entriesContainer.appendChild(poemDiv);
     }
     scrolltoHash();
     
