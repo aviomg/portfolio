@@ -41,6 +41,3 @@ def DFS(graph):
             Explore(graph,u,pre,post,t) #u=0, t=1
     return pre,post
     
-
-
-

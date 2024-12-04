@@ -103,6 +103,9 @@
       .pre{
         @apply m-0 text-[#dcdcdc];
       }
+      .toc-item{
+        @apply text-hgreen hover:text-red-400 hover:underline ease-in-out duration-200 cursor-pointer;
+      }
 }
 @layer utilities{
     .grid-type{

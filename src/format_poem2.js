@@ -17,10 +17,20 @@ function splitPoemsFromText(fileContent) {
 var counter = 1;
 function createPoemDiv(text){
 const article = document.createElement('article');
+const toc = document.createElement('li');
+const ul = document.getElementById('toc');
 id = "poem" + counter.toString()
 article.id = id;
+const span1 = document.createElement('span');
+span1.classList.add("font-bold");
+span1.textContent = counter + "." + " "
+textcont = counter + "." + " ";
 counter++;
 article.classList.add('poem-container');
+const link = document.createElement('a');
+
+link.classList.add("toc-item");
+//link.href = `./entries.html#${id}`;
 
 const header = document.createElement('h1');
 header.classList.add('poem-head');
@@ -31,13 +41,29 @@ const lines = text.split('\n');
 const title = document.createElement('p');
 const title1 = document.createElement('p');
 title.textContent = lines[0].trim();
-flag = lines[1] != null;
+flag = lines[1].trim().length != 0;
 header.appendChild(title);
+textcont = textcont + lines[0].trim();
+const span2 = document.createElement('span');
+span2tc = lines[0].trim();
 if(flag){
+ // console.log(lines[1]);
   title1.textContent = lines[1].trim();
   header.appendChild(title1);
+  textcont = textcont + "// " + lines[1].trim();
+  span2tc = span2tc + "// " + lines[1].trim();
 }
+span2.textContent = span2tc;
 article.appendChild(header);
+link.appendChild(span1);
+link.appendChild(span2);
+//link.textContent = textcont;
+link.id = id + "-toc";
+toc.appendChild(link);
+link.onclick = function() { 
+  console.log("calling");
+  clicktoc(link.id); };
+ul.appendChild(toc);
 
 const container = document.createElement('div');
 container.id="body1";
@@ -109,7 +135,7 @@ fetch('../assets/nyc.txt')
       newEntriesContainer.appendChild(poemDiv);
     }
     const entriesContainer = document.getElementById('archived-entries');
-    console.log(poems.length);
+    //console.log(poems.length);
     for(i=num_new;i<poems.length;i++){
       const poemDiv = createPoemDiv(poems[i]);
       entriesContainer.appendChild(poemDiv);
@@ -129,15 +155,26 @@ fetch('../assets/nyc.txt')
 
 function scrolltoHash(){
   const hash=window.location.hash;
-  console.log(hash);
+  
   if (hash) {
-    
     const targetElement = document.querySelector(hash);
     console.log(targetElement);
     if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
     }
 }
+}
+function clicktoc(id){
+  const num = id.split("-");
+  const hash = "#" + num;
+  console.log(hash);
+  const targetElement = document.querySelector(hash);
+  if(targetElement){
+    console.log(targetElement);
+    targetElement.scrollIntoView({behavior:'smooth'});
+  }
+  else{console.log("not found");}
+  
 }
 
 // Export the function so it can be used in other files
