@@ -75,5 +75,3 @@ def merge_sort(arr):
             b.append(num)
     ans = np.array(b)
     return ans
-
-    

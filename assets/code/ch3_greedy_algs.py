@@ -92,10 +92,3 @@ def frac_ks(v,w,b):
         addon = x[i] * v[i]
         optimal = optimal + addon
     return x, optimal
-
-
-
-
-
-
-

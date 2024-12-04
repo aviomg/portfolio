@@ -18,7 +18,7 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-serif flex flex-col min-h-screen">
   <main class="flex-grow">
-    <div id="nav" class="pb-5 pt-5 text-center container mx-auto text-eggplant">
+    <div id="nav" class="pb-0 pt-5 text-center container mx-auto text-eggplant">
         <ul class="justify-center flex space-x-4 text-viridian font-bold">
         <li><a href="../#cont" class="hover:underline">Home</a></li>
         <li><a href="./blog.html" class="text-puce hover:underline"> Blog</a></li>
@@ -30,14 +30,26 @@
           <h2 id="current" class="text-4xl font-serif font-bold mb-4 text-puce">blog posts</h2>
           <p class=" text-gray-700 italic">writing and ranting and rhyming and etc..</p>
         </div>
+        <div class="pt-4">
+        <h2 class="font-bold text-lg mx-auto text-center">Table of Contents</h2>
+        <div class="max-w-4xl mx-auto max-h-[30vh] overflow-y-scroll border border-hgreen text-left pl-4 pr-20 py-2">
+          
+          <ul id="toc">
+          </ul>
+        </div>
+      </div>
       </header>
-      <ul class="justify-center flex space-x-4">
-        <li class="text-puce font-bold">current</li>
-        <li class="text-viridian hover:underline"><a href="./entries.html#jumptoarchive">archived</a></li>
-      </ul>
+    
+      <div>
+
+        <ul class="justify-center flex space-x-4">
+          <li class="text-puce font-bold">current</li>
+          <li class="text-viridian hover:underline"><a href="./entries.html#jumptoarchive">archived</a></li>
+        </ul>
   <div id="entries" class="max-w-4xl mx-auto pb-10 py-4 px-6">
   
   </div>
+</div>
   <h2 id="jumptoarchive" class="container pb-4 mx-auto text-center text-3xl font-bold text-puce">archived/older</h2>
   <ul class="justify-center flex space-x-4">
     <li class="text-viridian hover:underline"><a href="./entries.html#current">current</a></li>
