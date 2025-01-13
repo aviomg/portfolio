@@ -107,6 +107,12 @@
       .toc-item{
         @apply text-hgreen hover:text-red-400 hover:underline ease-in-out  cursor-pointer;
       }
+      .image-div{
+        @apply flex flex-row gap-4 mb-8;
+      }
+      .image-article{
+       @apply pt-4 pb-4  container block text-left mx-auto space-y-0;
+      }
 }
 @layer utilities{
     .grid-type{
