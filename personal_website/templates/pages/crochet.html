@@ -1,0 +1,125 @@
+{% load static %}
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXQ8RJTY7Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SXQ8RJTY7Q');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{% static 'css/output.css' %}" rel="stylesheet">
+  <title>Avi Kumar | Crochet </title>
+  <link rel="icon" href="../assets/laptop.png">
+</head>
+<body class="bg-base text-puce font-serif flex flex-col min-h-screen">
+  <main class="flex-grow">
+  <div class="pb-5 pt-5 text-center container mx-auto text-eggplant">
+    <ul class="justify-center flex space-x-4 text-viridian font-bold">
+    <li><a href="../#cont" class="hover:underline">Home</a></li>
+    <li><a href="./blog.html" class="hover:underline"> Blog</a></li>
+    <li><a href="./notes.html" class="hover:underline"> Notes</a></li>
+  </ul>
+  </div>
+<!-- Hero Section -->
+<section class="pb-6">
+<div class="container mx-auto text-center">
+  <h2 class="text-3xl text-viridian font-serif font-bold mb-4">crochet photo diary and gallery</h2>
+  <p class="text-lg text-gray-700">more to come soon! this page is under construction.</p>
+</div>
+</section>
+
+<div class="flex justify-center items-center gap-4 mb-8">
+  <img src="../assets/IMG_9727.jpeg" alt="Image 1" class="w-1/6 shadow-lg rounded-sm border-2 border-viridian">
+  <img src="../assets/527C1050-2ECA-4130-B11D-15E32F3486BB_1_105_c.jpeg" alt="Image 3" class="max-h-[200px] object-contain rounded-sm border-viridian border-2">
+  <img src="../assets/IMG_1412.jpeg" alt="Image 2" class="w-1/6 rounded-sm shadow-md border-2 border-viridian">
+  <img src="../assets/671FB1A9-77AE-43B1-9445-78979391D617_1_105_c.jpeg" alt="Image 2" class="max-h-[230px] object-cover border-viridian border-2 rounded-sm">
+
+</div>
+{% for post in posts %}
+    <div class="crochet-post">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.date }}</p>
+        {% for img in post.images %}
+            <img src="{{ MEDIA_URL }}{{ img }}" alt="">
+        {% endfor %}
+        {% for caption in post.captions %}
+            <p>{{ caption }}</p>
+        {% endfor %}
+    </div>
+{% endfor %}
+<div class="bg-viridian bg-opacity-30 mx-32">
+  <div class="max-w-5xl mx-auto pb-8 pt-6 px-4  text-center">
+    <div class="text-gray-900">
+      <article class="image-article">
+        <h1 class="font-bold text-lg underline">a lavender</h1>
+    
+        <div class="image-div">
+        <img src="../assets/crochet/6a.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+        <img src="../assets/crochet/6b.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+
+      </div>    
+      </article>
+      <article class="image-article">
+        <h1 class="font-bold text-lg underline">my first hat! for my then-8-month niece</h1>
+    
+        <div class="image-div">
+        <img src="../assets/crochet/5a.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+      </div>    
+      </article>
+      <article class="image-article">
+        <h1 class="font-bold text-lg underline">a headband I made for my <span class="italic">bhabi</span> (brother's wife)</h1>
+    
+        <div class="image-div">
+        <img src="../assets/crochet/4a.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+        <img src="../assets/crochet/4b.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+      </div>    
+      <p>it ended up being way too small (lol) but my neice got some use out of it.</p>
+
+      </article>
+      <article class="image-article">
+        <h1 class="font-bold text-lg underline">some random squares</h1>
+    
+        <div class="image-div">
+        <img src="../assets/crochet/3a.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+      </div>    
+      </article>
+      <article class="image-article">
+        <h1 class="font-bold text-lg underline">a hat for my <span class="italic">naani</span> (mother's mother), modeled on my sister and I</h1>
+    
+        <div class="image-div">
+        <img src="../assets/crochet/2a.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+        <img src="../assets/crochet/2b.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+      </div>
+      <p>this was a very full circle moment; when I was younger, I didn't own a single hat, scarf, or pair of gloves that wasn't knit by my naani.</p>
+    
+      </article>
+  <article class="image-article">
+    <h1 class="font-bold text-lg underline">first time trying my hand at tapestry crochet</h1>
+
+    <div class=image-div>
+      <img src="../assets/crochet/1a.jpeg" alt="image 5" class="max-h-[300px] object-contain rounded-sm border-2 border-puce">
+    </div>
+  </article>
+  
+</div>
+</div>
+</div>
+<div id="crochet-gallery"></div>
+    
+
+</main>
+
+  <!-- Footer -->
+  <footer class="mt-10 bg-pink-200 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Avi Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="crochet_images.js"></script>
+</body>
+</html>

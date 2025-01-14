@@ -1,0 +1,104 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXQ8RJTY7Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SXQ8RJTY7Q');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{% static 'css/output.css' %}" rel="stylesheet">
+  <title>Avi Kumar | Blog</title>
+  <link rel="icon" href="../assets/laptop.png">
+</head>
+<body class="bg-base text-puce font-serif flex flex-col min-h-screen">
+
+  <main class="flex-grow">
+  <div class="pb-5 pt-5 text-center container mx-auto text-eggplant">
+    <ul class="justify-center flex space-x-4 text-viridian font-bold">
+    <li><a href="{% url 'home#cont' %}" class="hover:underline">Home</a></li>
+    <li><a href="./blog.html" class="text-puce hover:underline"> Blog</a></li>
+    <li><a href="./notes.html" class="hover:underline"> Notes</a></li>
+  </ul>
+  </div>
+<!-- Hero Section -->
+<section class="pb-6">
+<div class="container mx-auto sm:mx-auto sm:p-0 lg:max-xl:p-2 p-2 text-center">
+  <h2 class="text-4xl font-serif font-bold mb-4">avi kumar</h2>
+  <p class="text-lg text-gray-700">a place to host, categorize, and document some of the things I do 
+    and think and make. a scrapbook of my life (an interface for my brain?).</p>
+</div>
+</section>
+
+<div class="flex justify-center items-center gap-4 mb-8 text-center">
+  <a href="./crochet.html" class="inline-block sm:w-1/5 md:max-lg:w-[50%] lg:max-xl:w-[40%] w-4/5 mx-auto ">
+    <img src="../assets/IMG_9727.jpeg" alt="Image 2" class="w-full h-[300px] object-cover overflow-clip rounded-sm shadow-puce hover:shadow-pink-600 shadow-md border-2 border-puce">
+    <h1 class="mt-2 text-center text-pink-400">(click for more crochet)</h1>
+  </a>
+</div>
+
+<div class="bg-viridian bg-opacity-30 mx-32">
+<div name="thumbnail" class="max-w-5xl mx-auto pb-8 pt-6 px-6  text-center">
+  <a href="./entries.html">
+    <h1 class="text-lighterblue text-xl font-bold px-2 py-1 mb-2 hover:bg-blue-200 hover:bg-opacity-70 border-2 border-lighterblue hover:border-lighterblue  hover:text-lighterblue  transition-all duration-75 max-w-fit text-center mx-auto">All Posts</h1>
+  </a>
+  
+  
+  <div id="poetry-preview" class="poetry-preview ">
+    <hr>
+    
+
+  </div>
+  <a id="loadmore" >
+  <h1 class="text-black mt-4 px-4 text-lg font-bold text-left shadow-md bg-lighterblue hover:bg-[#4780ea] transition all duration-75 rounded-md max-w-fit">more</h1>
+</a>
+</div>
+</div>
+
+
+
+  
+  <!-- <header class="bg-opacity-40 bg-viridian text-white">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    
+      <a href="index.html" class="text-xl font-bold hover:text-gray-300">
+        My Website
+      </a>
+      
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="archive.html" class="hover:text-gray-300">Class Notes</a></li>
+          <li><a href="blog.html" class="hover:text-gray-300">Blog</a></li>
+          <li><a href="portfolio.html" class="hover:text-gray-300">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> -->
+
+  <!-- Hero Section -->
+  
+  
+
+  
+
+
+</main>
+
+  <!-- Footer -->
+  <footer class="mt-10 bg-pink-200 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Avi Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+<script src="../src/try2.js" type="text/javascript"></script>
+</html>
