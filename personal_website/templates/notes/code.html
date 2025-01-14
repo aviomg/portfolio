@@ -1,0 +1,192 @@
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXQ8RJTY7Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SXQ8RJTY7Q');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../src/static/output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.css" rel="stylesheet">
+<link href="../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet">
+<link href="../node_modules/prismjs/plugins/match-braces/prism-match-braces.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  
+  <title>Avi Kumar | Blog</title>
+  <link rel="icon" href="../assets/laptop.png">
+</head>
+<body class="bg-base text-puce font-serif flex flex-col min-h-screen line-numbers match-braces">
+
+  <main class="flex-grow">
+  <div class="pb-5 pt-5 text-center container mx-auto text-eggplant">
+    <ul class="justify-center flex space-x-4 text-viridian font-bold">
+    <li><a href="../#cont" class="hover:underline">Home</a></li>
+    <li><a href="../pages/blog.html" class=" hover:underline"> Blog</a></li>
+    <li><a href="../pages/notes.html" class="hover:underline"> Notes</a></li>
+  </ul>
+  </div>
+  <header class="container text-2xl text-puce font-serif font-bold mx-auto text-center">
+    <h1>alg implementations</h1>
+    <p class="text-lg text-gray-700 font-normal"><span>in COMP 550: Algorithms and Analysis, we studied various types of algorithms. below
+      is a compilation of my implementations of each algorithm discussed in </span><span><a class="underline hover:text-midblue italic" href="https://kevinsun.org/files/algorithms/algorithms.pdf" target="_blank">Notes on Algorithms</a></span>
+    <span>by Professor Kevin Sun. The files are organized in reference to each chapter of the textbook.</span></p></header>
+ <!--<pre><code class="language-python">
+    def cool_function():
+        print("This is a cool function!")
+    </code></pre>-->
+   <div class="codebody">
+    <div class="ide-container ">
+      <!-- Sidebar Explorer -->
+      <div class="sidebar ">
+        <ul class="sidebar-ul">
+          <li curr="1" id="explorer" class="py-2 pr-[10px] pl-[6px] cursor-pointer text-sm  hover:bg-[#dcdbdb]" onclick="closesidebars()">  &#9660; files</li>
+          <li class="sidebar-li" onclick="switchTab('file1')">ch1_array_algs.py</li>
+          <li class="sidebar-li " onclick="switchTab('file2')">ch2_essential_graph_algs.py</li>
+          <li class="sidebar-li " onclick="switchTab('file3')">ch3_greedy_algs.py</li>
+          <li class="sidebar-li " onclick="switchTab('file4')">ch4_dynamic_prog_algs.py</li>
+          <li class="sidebar-li " onclick="switchTab('file5')">ch5_shortest_path_algs.py</li>
+          <li class="sidebar-li " onclick="switchTab('file6')">ch7_np_hardness.py</li>
+          <li class="sidebar-li " onclick="switchTab('file7')">ch8_approximation_algs.py</li>
+
+
+
+        </ul>
+      </div>
+    
+      <!-- Main Content -->
+      <div class="main-content ">
+        <!-- Tabs -->
+        <div class="tabs">
+          <button class="tab active" onclick="switchTab('file1')">ch1_array_algs.py</button>
+          <button class="tab" onclick="switchTab('file2')">ch2_essential_graph_algs.py</button>
+          <button class="tab" onclick="switchTab('file3')">ch3_greedy_algs.py</button>
+          <button class="tab" onclick="switchTab('file4')">ch4_dynamic_prog_algs.py</button>
+          <button class="tab" onclick="switchTab('file5')">ch5_shortest_path_algs.py</button>
+          <button class="tab" onclick="switchTab('file6')">ch7_np_hardness.py</button>
+          <button class="tab" onclick="switchTab('file7')">ch8_approximation_algs.py</button>
+        </div>
+    
+        <!-- Code Viewer -->
+        <div class="code-viewer">
+          <pre id="file1"  data-src="../assets/code/ch1_array_algorithms.py" class="code-block language-python !bg-neutral-200"></pre>
+   
+          <pre id="file2" data-src="../assets/code/ch2_essential_graph_algs.py" class="code-block language-python !bg-neutral-200" style="display: none;"></pre>
+    
+          <pre id="file3"  data-src="../assets/code/ch3_greedy_algs.py" class="code-block language-python !bg-neutral-200" style="display: none;"></pre>
+          <pre id="file4"  data-src="../assets/code/ch4_dp_algs.py" class="code-block language-python !bg-neutral-200" style="display: none;"></pre>
+          <pre id="file5"  data-src="../assets/code/ch5_shortest_path_algs.py" class="code-block language-python !bg-neutral-200" style="display: none;"></pre>
+          <pre id="file7"  data-src="../assets/code/ch8_approximation_algs.py" class="code-block language-python !bg-neutral-200" style="display: none;"></pre>
+          <pre id="file6"  data-src="../assets/code/ch7_reductions.py" class="code-block language-python !bg-neutral-200" style="display: none;"></pre>
+
+        </div>
+      </div>
+    </div>
+  </div> 
+        
+
+
+  </main class="flex-grow">
+  <footer class="mt-10 bg-pink-200 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Avi Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/file-highlight/prism-file-highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+<script src="../node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+<script src="../node_modules/prismjs/plugins/match-braces/prism-match-braces.js"></script>
+<script>
+  Prism.plugins.toolbar.registerButton('download', {
+      text: 'Download',
+      onClick: function(env) {
+          const blob = new Blob([env.code], { type: 'text/plain' });
+          const link = document.createElement('a');
+          link.href = URL.createObjectURL(blob);
+          link.download = 'code.py'; // Default filename
+          link.click();
+      }
+  });
+</script>
+<script>
+
+
+</script>
+<script>
+  function closesidebars(){
+    const explorer = document.getElementById('explorer');
+    curr = explorer.getAttribute('curr');
+    console.log(curr);
+    if(curr.includes('0')){
+      console.log("yes");
+      explorer.innerHTML = '&#9660; files';
+      explorer.setAttribute('curr','1');
+      explorer.classList.remove("!bg-blue-300");
+    }
+    else{
+      console.log("no");
+      explorer.innerHTML = '&#9654; files';
+      explorer.setAttribute('curr','0');
+      explorer.classList.add("!bg-blue-300");
+    }
+    const sidebars = document.querySelectorAll('.sidebar-li');
+    sidebars.forEach((sidebar)=>{
+     // console.log(sidebar.classList);
+      if (sidebar.classList.contains('hidden')){
+        console.log("found");
+        sidebar.classList.remove('hidden');
+      }
+      else{
+      sidebar.classList.add('hidden');}
+  });
+
+  }
+</script>
+
+  <script>
+    function switchTab(tabId) {
+  // Hide all code blocks
+  const codeBlocks = document.querySelectorAll('.code-block');
+  codeBlocks.forEach((block) => (block.style.display = 'none'));
+
+  // Show the selected code block
+  const activeBlock = document.getElementById(tabId);
+  if (activeBlock) {
+    activeBlock.style.display = 'block';
+  }
+
+  // Update active tab styling
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach((tab) => tab.classList.remove('active'));
+  const activeTab = document.querySelector(`.tab[onclick="switchTab('${tabId}')"]`);
+  if (activeTab) {
+    activeTab.classList.add('active');
+  }
+
+  const sidebars = document.querySelectorAll('.sidebar-li');
+  sidebars.forEach((sidebar)=>sidebar.classList.remove('active'));
+  const activebar = document.querySelector(`.sidebar-li[onclick="switchTab('${tabId}')"]`);
+  if(activebar){
+    activebar.classList.add('active');
+    //console.log(activebar);
+  }
+
+}
+
+  </script>
+
+
+</html>
+
+

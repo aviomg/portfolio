@@ -1,0 +1,221 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXQ8RJTY7Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SXQ8RJTY7Q');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avi Kumar | Home</title>
+  <link rel="icon" href="./assets/laptop.png">
+  <link rel="stylesheet" href="{% static 'css/output.css' %}" >
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+
+</head>
+
+<header class="h-[100vh] min-h-[350px] w-full bg-puce flex flex-col justify-center px-4 sm:px-0">
+  <div class="w-[70%] m-auto">
+    <h1 class="block text-5xl font-bold text-[#f1f1f1]">
+      Avi Kumar
+      <span class="block text-3xl text-[#3a6d5b] font-normal">student, software engineer, writer, professional question asker</span>
+      <div class="mt-[50px] mb-[-80px] text-[#3a6d5b] text-lg ">
+        welcome to my page! &darr;
+      </div>
+    </h1>
+  </div>
+</header>
+
+<body class="bg-base text-puce font-serif flex flex-col min-h-screen">
+  <main class="flex-grow">
+    <div id="cont" class="pb-5 pt-5 text-center container mx-auto text-eggplant">
+        <ul class="justify-center flex space-x-4 text-viridian font-bold">
+        <li><a href="./" class="text-puce hover:underline">Home</a></li>
+        <li><a href="{% url 'blog' %}" class="hover:underline">Blog</a></li>
+        <li><a href="{% url 'notes' %}" class="hover:underline"> Notes</a></li>
+      </ul>
+      </div>
+  <!-- Hero Section -->
+  <section class="pb-20">
+    <div class="container sm:mx-auto p-2 sm:p-0  sm:text-center sm:container text-center">
+
+      <h2  class="text-4xl font-serif font-bold mb-4">avi kumar</h2>
+      <p class="text-lg text-gray-700 px-10">third-year student at UNC Chapel Hill studying computer science and french. This site is a collection of my projects, notes, thoughts,
+         professional information, and more. It's a space to document my journey as a computer science student, future developer/engineer, and human being. thanks for visiting!
+        </p>
+    </div>
+    <div class="text-center container mx-auto mt-6 text-sm text-viridian">
+      <ul class="flex flex-wrap justify-center gap-1 gap-y-4 sm:gap-3 px-1 sm:p-0">
+        <li>
+          <a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" 
+             href="https://www.linkedin.com/in/jahnavikumar/" 
+             target="_blank">Linkedin</a>
+        </li>
+        <li>
+          <a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" 
+             href="https://www.github.com/aviomg" 
+             target="_blank">Github</a>
+        </li>
+        <li>
+          <a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" 
+             href="mailto:avikumar2048@gmail.com" 
+             target="_blank">avikumar2048@gmail.com</a>
+        </li>
+        <li>
+          <a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" 
+             href="./assets/resume-avi-kumar.pdf" 
+             target="_blank">Resume</a>
+        </li>
+      </ul>
+    </div>
+    
+   <!-- <div class="text-center container mx-auto mt-6 text-sm text-viridian ">
+      <ul class="justify-center flex sm:space-x-3 space-x-1 px-1 sm:p-0">
+        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="https://www.linkedin.com/in/jahnavikumar/" target="_blank">Linkedin</a> </li>  
+        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="https://www.github.com/aviomg" target="_blank">Github</a> </li>
+        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="mailto:avikumar2048@gmail.com" target="_blank">avikumar2048@gmail.com</a> </li>
+        <li><a class="bg-pink-300 bg-opacity-35 hover:underline hover:text-[#6392e9] duration-100 sm:p-2 px-1 py-2 border-[1px] border-viridian shadow-md rounded-lg hover:border-lighterblue" href="./assets/resume-avi-kumar.pdf" target="_blank">Resume</a> </li>
+      </ul>
+    </div>-->
+  </section>
+  
+ 
+  <!-- <section class="grid grid-cols-3">
+  <a class="card" href="https://studio-keys.onrender.com" target="_blank">
+    <span class="card-title">Studio Keys</span>
+    <span class="card-subtext">this is a description.</span>
+  </a>
+  <div class="card">hello</div>
+  <div class="card">hello</div>
+  <div class="card">hello</div>
+  <div class="card">hello
+    <span>hello1</span>
+  </div>
+</section> -->
+<section id="projects" class="px-6 pb-16">
+<h2 class="font-extrabold mb-5 text-2xl text-midblue">Projects</h2>
+<section class="sm:grid sm:grid-type py-2  justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4">
+ <!-- <section class="py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4">-->
+  <a id="project_1" class="group card" href="https://studio-keys.onrender.com" target="_blank">
+    <span class="card-title">Studio Keys</span>
+    <span class="card-subtext">A Python-based tool designed to enable the easy retrieval and recovery 
+      of UI/UX designs created with the (now) defunct Invision prototyping tool.</span>
+  </a>
+  <a id="project_2" class="group card" href="https://youtu.be/5HTkijZrJAc?si=a7blwTyL7nJWt4zG" target="_blank">
+    <span class="card-title">CSXL Student Showcase Board</span>
+    <span class="card-subtext">My team's final project for COMP 590 involved designing and 
+      implementing a feature for the UNC CSXL website that allows students to showcase their projects and explore others' work in a 
+      centralized, interactive feed. Click to watch our demo video!</span>
+  </a>
+</section>
+</section>
+
+<section class="px-6 pt-2 pb-8">
+<h2 class="font-extrabold text-2xl text-[#2d5baf] mb-3">Coursework</h2>
+<div id="classes" class="py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4 lg:max-xl:justify-center">
+  <div class="widget">
+    <h1 class="widget-title">COMP 560: Artificial Intelligence</h1>
+    <p class="widget-content italic">Coming Soon (Spring 2025)</p>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 541: Digital Logic</h1>
+    <p class="widget-content italic">Coming Soon (Spring 2025)</p>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 550: Algorithms and Analysis</h1>
+    <p class="widget-content">Key Topics: Problem-solving paradigms, Computational complexity, Algorithm design</p>
+    <div class="flex gap-1">
+    <a href="./notes/comp550.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
+    <a href="./notes/code.html" class="widget-notes"><pre class="code-block language-python max-w-fit !bg-transparent !py-0 !mr-1 !text-viridian !px-0"><code class="code-notes">code</code></pre></a>
+    </div>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 435: Computer Security Concepts</h1>
+    <p class="widget-content">Key Topics: The CIA triad; Cryptography; Software, Network, and OS security</p>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 311: Computer Organization</h1>
+    <p class="widget-content">Key Topics: Assembly Programming, Microprocessor and CPU Design, Combinational and Sequential Logic</p>
+    <a href="./notes/comp311.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 590: Foundations of Software Engineering</h1>
+    <p class="widget-content">Key Topics: Agile Project Management, Full-stack & Production-grade Development, Technical Communication, 
+      Automation and Code Review</p>
+      <a href="./notes/comp590.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 455: Models of Languages and Computation</h1>
+    <p class="widget-content">Key Topics: Automata, Computability, and Complexity theories; Reducibility; Time and Space Complexity</p>
+      <a href="./notes/comp455.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
+  
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 301: Foundations of Programming</h1>
+    <p class="widget-content">Key Topics: Object-Oriented Programming, Exception handling, Software Testing, Design Patterns </p>
+    <a href="./notes/comp301.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 211: Systems Fundamentals</h1>
+    <p class="widget-content">Key Topics: Systems Programming (C), Compilation system, Physical/Virtual memory, OS basics </p>
+    <a href="./notes/comp211.html" class="widget-notes"><pre class="code-block language-python pre1"><code class="code-notes">notes</code></pre></a>
+
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 210: Data Structures and Analysis</h1>
+    <p class="widget-content">Key Topics: Fundamental Data structures, Big-O Notation and Algorithm Analysis</p>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 283: Discrete Structures</h1>
+    <p class="widget-content">Key Topics: Combinatorics; Sets, tuples, etc.; Logic and Proof Techniques</p>
+  </div>
+</section>
+
+  <!--<div class="widget">
+    <h1 class="widget-title">COMP 211: Systems Fundamentals</h1>
+    <p class="widget-content text-sm text-gray-700">
+      Key Topics: C Programming, Operating Systems Basics, Binary Arithmetic and Information Representation
+    </p>
+    <div class="widget-links flex space-x-2 mt-2">
+      <a href="notes/comp211.html" class="text-blue-600 hover:underline">View Notes</a>
+      <a href="projects/comp211-project.html" class="text-blue-600 hover:underline">View Project</a>
+    </div>
+  </div>
+  <div class="widget">
+    <h1 class="widget-title">COMP 211: Systems Fundamentals</h1>
+    <div class="widget-links flex space-x-2 mt-2">
+      <a href="notes/comp211.html" class="text-blue-600 hover:underline">View Notes</a>
+      <a href="projects/comp211-project.html" class="text-blue-600 hover:underline">View Project</a>
+    </div>
+  </div> -->
+    
+ 
+  
+
+  
+
+</div>
+</main>
+
+  <!-- About the Site Section -->
+  
+
+
+  <!-- Footer -->
+  <footer class="bg-pink-200 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Avi Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+</body>
+</html>

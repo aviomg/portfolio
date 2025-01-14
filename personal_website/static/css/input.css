@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .widget {
+        @apply  lg:max-xl:w-[30%] px-5 py-2 rounded-lg  w-full md:w-[48%] lg:w-[24%] shadow-md bg-purple-300 bg-opacity-30 shadow-neonpurp hover:shadow-[#725295] hover:bg-opacity-40 transition-all duration-150  flex flex-col;
+      }
+      .widget2 {
+        @apply border-darkpurple border-[1px] shadow-md px-5 py-2 rounded-lg w-[24%] bg-purple-300 bg-opacity-50 hover:bg-opacity-40 transition-all duration-150  flex flex-col;
+      }
+      
+      .widget-title {
+        @apply text-lg min-h-14 font-bold text-[#5941a9];
+      }
+      .pre1{
+        @apply  max-w-fit !border-transparent !bg-transparent !px-0 !mr-1 !py-0;
+      }
+      .code-notes{
+        @apply !border-green-400 !border !px-1 !text-viridian hover:!bg-green-300 hover:!bg-opacity-100 !bg-green-300 !bg-opacity-40 transition-all duration-100;
+      }
+    
+      .widget-content {
+        @apply text-xs text-gray-700 min-h-fit lg:min-h-12;
+      }
+      .widget-notes{
+        @apply text-viridian font-bold text-sm hover:text-[#6bc9b2] transition-all duration-75 max-w-min border-viridian;
+      }
+      .card1{
+        @apply bg-red-500 relative cursor-pointer w-[300px] h-[380px] m-2 rounded-lg overflow-hidden border-green-100 border-2;
+    
+      }
+      .card2{
+        @apply flex flex-col w-full p-4 border-viridian border-[1px] hover:border-sage;
+      }
+      .card-title2{
+        @apply mb-2 text-xl font-semibold text-viridian group-hover:text-sage;
+      }
+      .card-subtext2{
+        @apply text-base text-viridian group-hover:text-sage;
+      }
+      .card{
+        @apply flex flex-col w-full p-4 border-viridian border-[1px] hover:border-red-300;
+      }
+      /*py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4"*/
+      .card-title{
+        @apply mb-2 text-xl font-semibold text-viridian group-hover:text-red-300;
+      }
+      .card-subtext{
+        @apply text-base text-viridian group-hover:text-red-300 break-words;}
+      .project-cards {
+        @apply flex flex-row flex-wrap items-center justify-center gap-y-4 gap-x-4 
+      }
+      .poem-container{
+        @apply text-gray-700 container block text-left mx-auto space-y-1 mb-2 px-40 py-4;
+      }
+      .preview-poem-container{ 
+        @apply  border-b  pt-4 pb-4 text-gray-700 container block text-left mx-auto space-y-0 ;}
+      .poem-head{
+        @apply font-bold text-left;
+      }
+      .poem-para{
+        @apply mb-4 mt-0;
+      }
+      .poetry-preview{
+        @apply text-left text-gray-700;
+      }
+      .preview-title{
+        @apply text-black  hover:underline transition-all duration-100 mt-3;
+      }
+      .codebody{
+        @apply font-sans m-0 p-0 flex justify-center items-center h-[100vh] mt-8 ;
+      }
+      .ide-container{
+        @apply flex w-[85%] h-full border border-[#444] rounded-lg overflow-hidden bg-[#252526] shadow-md;
+      }
+      .sidebar{
+        @apply w-[20%] bg-neutral-300 text-gray-500 py-[10px] rounded-sm border-r border-r-gray-500;
+      }
+      .sidebar-ul{
+        @apply list-none p-0 m-0;
+      }
+      .sidebar-li{
+        @apply py-2 px-[10px] text-sm cursor-pointer  hover:bg-[#dcdbdb] transition-all duration-150;
+      }
+      .sidebar-li.active{
+        @apply bg-[#b4c9e3];
+      }
+      .main-content{
+        @apply flex-1 flex flex-col overflow-x-scroll;
+      }
+      .tabs{
+        @apply bg-neutral-300 flex overflow-x-scroll ;
+      }
+      .tab{
+        @apply bg-neutral-300 text-sm border-r border-neutral-200 text-gray-500 py-2 px-[14px] cursor-pointer hover:bg-neutral-400 transition-all duration-150;
+      }
+      .tab.active{
+        @apply bg-neutral-200 text-green-400 border-t-green-400 border-t;
+      }
+      .code-viewer{
+        @apply flex-1 p-[10px]  overflow-y-auto bg-neutral-200;
+      }
+      .pre{
+        @apply m-0 text-[#dcdcdc];
+      }
+      .toc-item{
+        @apply text-hgreen hover:text-red-400 hover:underline ease-in-out  cursor-pointer;
+      }
+      .image-div{
+        @apply flex flex-row gap-4 mb-8;
+      }
+      .image-article{
+       @apply pt-4 pb-4  container block text-left mx-auto space-y-0;
+      }
+}
+@layer utilities{
+    .grid-type{
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+    width:100%;
+    gap:32px;
+    /*display:flex;*/
+}
+}
