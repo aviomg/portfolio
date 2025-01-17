@@ -1,0 +1,238 @@
+/* color:#816e94; for the magenta*/ 
+*{
+    font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size:1rem;
+}
+body{
+    background-color:#acd7bb;
+    /*color:#b48291;*/
+    color:#344966;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    display:flex;
+    flex-direction:column;
+}
+.top-section{
+    display: flex;
+    flex-direction: rows;
+  
+    
+}
+img{
+    max-width:22%;
+    border-color:#74226c;
+    border-width:3px;
+    border-style: solid;
+    object-fit: cover;
+}
+main{
+    flex-grow: 1;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    row-gap:20px;
+}
+.head{
+    margin-left:60px;
+    margin-right:60px;
+    margin-bottom:36px;
+    align-items: center;
+}
+
+.current{
+    color:#ae95c7;
+}
+ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left:auto;
+    text-align:center;
+    list-style:none;
+    gap:20px;
+    font-weight:bold;
+    margin-left:-50px;
+}
+a{
+    color:#816e94;
+    font:inherit;
+}
+div.experience.langlist.swe>span{
+    background-color: rgba(108, 171, 65, 0.2);
+    border-style: solid;
+    border-width:1px;
+    border-color:#556f44;
+    color:#556f44;
+}
+div.experience.langlist.exposure>span{
+    color:#74226c;
+    background-color:rgba(174, 76, 165, 0.2);
+    border-width:1px;
+    border-style:solid;
+    border-color:#74226c;
+}
+div.experience.langlist.other>span{
+    color:#037971;
+    background-color:rgba(55, 212, 201, 0.2);
+    border-width:1px;
+    border-style:solid;
+    border-color:#037971;
+}
+
+.title{
+    font-size: 2.25rem;
+    line-height:2.5rem;
+    font-weight:bold;
+    margin-top:-20px;
+    margin-bottom:16px;
+    margin-left:auto;
+    color:#816e94;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+}
+
+.para{
+    font-size:1.125rem;
+    line-height:1.75rem;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+    
+}
+.subtitle{
+    color:#816e94;
+    font-family: 'Courier New', monospace;
+    margin-right:10px;
+    font-weight:bold;
+    font-size:1.25rem;
+    line-height:1.75rem;
+   
+}
+section{
+    text-align:left;
+   /* background-color:#f9b9b7;
+    background-color:#8cc7a1;*/
+    background-color: antiquewhite;
+  
+    padding-left:20px;
+    padding-right:20px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:16px;
+    border-color:#204d4a;
+    border-width:2px;
+    border-style:solid;
+   
+}
+.section2{
+   /* background-color:#8cbcb9;*/
+   background-color: antiquewhite;
+}
+.experience{
+    font-size:1rem;
+    line-height:1.75rem;
+    text-align:left;
+    margin-bottom:15px;
+}
+.experience2{
+    font-size:15px;
+    line-height:1.5rem;
+    text-align:left;
+    margin-bottom:15px;
+    margin-top:10px;
+}
+
+.item{
+    display:flex;
+    flex-direction:column;
+    margin-top:4px;
+    max-width:75%;
+}
+.itemcontainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.itemcontainer>h2{
+    color:#74226c;
+    font-size:1rem;
+    line-height:1.75rem;
+    margin:inherit;
+    margin-top:6px;
+    margin-right:20px;
+   min-width:23%;
+   padding-right:20px;
+    font-weight:bold;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    text-align: right;
+    max-height:min-content;
+   
+    background-color: rgb(254,202,202,0.5);
+    
+}
+div.itemcontainer>span{
+    background-color:rgb(254,202,202,0.5);
+}
+div.item>h2{
+    color:#74226c;
+    background-color:rgb(254,202,202,0.5);
+    font-size:1rem;
+    line-height:1.75rem;
+    margin:inherit;
+    margin-top:2px;
+    font-weight:bold;
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    text-decoration:underline;
+}
+
+h2{
+    font-size:1.5rem;
+    line-height:2rem;
+    margin-bottom:5px;
+   
+  /*  font-family: 'Courier New', monospace;*/
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+}
+.skills{
+    display:flex;
+    flex-direction:row;
+    column-gap:10px;
+    color:#3482bd;
+    margin-bottom:15px;
+}
+div.experience.langlist>span{
+background-color: rgba(155, 243, 240, 0.4);
+border-color:#09a6a1;
+border-width:1px;
+border-style:solid;
+padding-left:4px;
+padding-right:4px;
+}
+
+.langlist{
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-shadow:0 1px #fff;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:baseline;
+    row-gap:10px;
+    column-gap:35px;
+   
+}
+div.langlist>span{
+    font-size:17px;
+    font-weight:bolder;
+}
+a:hover{
+    color:#ae95c7;
+    transition-duration:150ms;
+}
+span{
+   
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+
+}
+nav{
+    margin-bottom:5px;
+}
