@@ -51,10 +51,32 @@ ul{
     list-style:none;
     gap:20px;
     font-weight:bold;
+    margin-left:-50px;
 }
 a{
     color:#816e94;
     font:inherit;
+}
+div.experience.langlist.swe>span{
+    background-color: rgba(108, 171, 65, 0.2);
+    border-style: solid;
+    border-width:1px;
+    border-color:#556f44;
+    color:#556f44;
+}
+div.experience.langlist.exposure>span{
+    color:#74226c;
+    background-color:rgba(174, 76, 165, 0.2);
+    border-width:1px;
+    border-style:solid;
+    border-color:#74226c;
+}
+div.experience.langlist.other>span{
+    color:#037971;
+    background-color:rgba(55, 212, 201, 0.2);
+    border-width:1px;
+    border-style:solid;
+    border-color:#037971;
 }
 
 .title{
