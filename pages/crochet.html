@@ -36,43 +36,81 @@
 
 <div class="flex justify-center items-center gap-4 mb-8">
   <img src="../assets/IMG_9727.webp" alt="Image 1" class="w-1/6 shadow-lg rounded-sm border-2 border-viridian">
-  <img src="../assets/527C1050-2ECA-4130-B11D-15E32F3486BB_1_105_c.webp" alt="Image 3" class="max-h-[200px] object-contain rounded-sm border-viridian border-2">
+  <img src="../assets/legwarmers.webp" alt="Image 3" class="max-h-[200px] object-contain rounded-sm border-viridian border-2">
   <img src="../assets/IMG_1412.webp" alt="Image 2" class="w-1/6 rounded-sm shadow-md border-2 border-viridian">
-  <img src="../assets/671FB1A9-77AE-43B1-9445-78979391D617_1_105_c.webp" alt="Image 2" class="max-h-[230px] object-cover border-viridian border-2 rounded-sm">
+  <img src="../assets/face.webp" alt="Image 2" class="max-h-[230px] object-cover border-viridian border-2 rounded-sm">
 
 </div>
 
-
+<h2 class="pt-4 px-10 text-center text-lg text-gray-700 font-mono container mx-auto max-w-6xl">the following is a chronological documentation of my experiences/accomplishments/creations in crochet, 
+  somewhat organized into chapters and by personal milestones. thank you for viewing and i hope you enjoy!
+  
+</h2>
   <div class=" max-w-6xl mx-auto pb-10 py-4 px-6">
 <div class="bg-puce  bg-opacity-40 rounded ">
-  <h2 class=" py-3 text-center text-lg font-bold underline text-gray-700">Level 1: Beginner/finding my footing (June-August 2023)</h2>
-  <p class="text-center text-gray-700">a whole lot of granny squares, and more.</p>
+  <div class=" text-gray-700 container block text-left mx-auto space-y-1 mb-2 px-10 py-4">
+<div class="carousel-container">
+  <h2 class=" py-3 text-left text-lg  font-bold  text-gray-700">ch 1: beginner (June-August 2023)</h2>
+  <p class="text-left text-gray-700">finding my footing and soaking my socks, a whole lot of granny squares, and more.</p>
     <div class="text-gray-700">
       <article class="image-article">
         <div class="flex flex-col justify-center items-center">
 
         <div class="carousel flex-row flex max-h-[400px] gap-4 max-w-fit overflow-hidden " >
-          <button id="prev" class=" prev  text-puce p-2 rounded-full text-xl">
+          <button id="prev" class=" prev  text-puce p-2 rounded-full text-3xl hover:text-pink-200 ">
               ❮ 
           </button>
           <img id="carousel-image" class="carousel-image border-[2px] max-h-[400px] min-w-[400px] bg-puce bg-opacity-20 border-puce shadow-lg shadow-black object-contain rounded-md" src="../assets/crochet/3a.webp" alt="Gallery Image">
-          <button id="next" class="next text-puce p-2 rounded-full text-xl">
+          <button id="next" class="next text-puce p-2 rounded-full text-3xl hover:text-pink-200 ">
               ❯
           </button>
       </div>
       
-      <p id="carousel-caption" class="text-lg mt-2 font-medium text-gray-700">
+      <p id="carousel-caption" class=" carousel-caption mt-2 font-medium text-gray-700">
         some random squares
     </p>
-    <p id="carousel-subcap" class="text-md max-w-[450px] text-center italic text-gray-700"></p>
+    <p id="carousel-subcap" class="carousel-subcap text-md max-w-[450px] text-center italic text-gray-700"></p>
  
   </div>
       </article>
-    
-     
-    
 </div>
 </div>
+</div>
+</div>
+<div class="bg-puce  bg-opacity-40 rounded">
+  <div class=" text-gray-700 container block text-left mx-auto space-y-1 mb-2 px-10 py-4">
+    <div class="carousel-container">
+  <h2 class=" py-3 text-left text-lg font-bold  text-gray-700">
+    ch 2: my first design (and first commission!) (july '23) </h2>
+    <p class="text-left text-gray-700">I designed my own headbands using some beads from the thrift store. My coworkers loved them 
+      so I started making and selling comissions. The validation (and moreover, the income) was a lot of fun but i don't know if it's something I'd do again.
+    </p>
+    <div class="text-gray-700">
+      <article class="image-article">
+        <div class="flex flex-col justify-center items-center">
+
+        <div class="carousel flex-row flex max-h-[400px] gap-4 max-w-fit overflow-hidden " >
+          <button id="prev" class=" prev  text-puce p-2 rounded-full text-3xl hover:text-pink-200 ">
+              ❮ 
+          </button>
+          <img id="carousel-image" class="carousel-image border-[2px] max-h-[400px] min-w-[400px] max-w-[400px] min-h-[400px] bg-puce bg-opacity-20 border-puce shadow-lg shadow-black object-contain rounded-md" src="../assets/crochet/2-1.webp" alt="Gallery Image">
+          <button id="next" class="next text-puce p-2 rounded-full text-3xl hover:text-pink-200 ">
+              ❯
+          </button>
+      </div>
+      
+      <p id="carousel-caption" class="carousel-caption mt-2 font-medium text-gray-700">
+        some random squares
+    </p>
+    <p id="carousel-subcap" class="carousel-subcap text-md max-w-[450px] text-center italic text-gray-700"></p>
+ 
+  </div>
+      </article>
+</div>
+  </div>
+</div>
+</div>
+
 </div>
 <div id="crochet-gallery"></div>
     
@@ -87,8 +125,11 @@
   </footer>
   <script src="crochet_images.js"></script>
   <script>
-     const gallery = [
-            { src:"../assets/crochet/3a.webp", caption: "some random squares." },
+    const carouselsData=[
+      {
+      images: [
+            { src:"../assets/crochet/3a.webp", caption: "some random squares" },
+            { src:"../assets/crochet/3b.webp", caption: "some random squares" },
             { src: "../assets/crochet/1a.webp", caption: "first time trying my hand at tapestry crochet" },
             {src:"../assets/crochet/2a.webp",caption:"a hat for my naani, modeled on my sister and I.",subcap:"this was a very full circle moment; when I was younger, I didn't own a single hat, scarf, or pair of gloves that wasn't knit by my naani."},
             {src:"../assets/crochet/2b.webp",caption:"a hat for my naani, modeled on my sister and I.",subcap:"this was a very full circle moment; when I was younger, I didn't own a single hat, scarf, or pair of gloves that wasn't knit by my naani."},
@@ -100,14 +141,59 @@
             {src:"../assets/crochet/7a.webp",caption:"fingerless gloves for my cousin"},
             {src:"../assets/crochet/7b.webp",caption:"fingerless gloves for my cousin"},
             {src:"../assets/crochet/7c.webp",caption:"fingerless gloves for my cousin"},
+            {src:"../assets/crochet/8b.webp",caption:"hat pour moi"},
+            {src:"../assets/crochet/8c.webp",caption:"hat pour moi"},
+        ]},
+        {
+      images: [
+            { src:"../assets/crochet/2-1.webp", caption: "the original, modeled on my wonderful sis" },
+            { src:"../assets/crochet/2-3.webp",caption: "the original, modeled on my wonderful sis"},
+            { src: "../assets/crochet/2-2.webp",caption: "the original, modeled on my wonderful sis" },
+            {src:"../assets/crochet/2-4.webp",caption:"2nd attempt"},
+            {src:"../assets/crochet/2-6.webp",caption:"2nd attempt"},
+            {src:"../assets/crochet/2-7.webp",caption:"2nd attempt"},
+            {src:"../assets/crochet/2-9.webp",caption:"2nd attempt"},
+            {src:"../assets/crochet/2-8.webp",caption:"comissions"},
+            {src:"../assets/crochet/2-11.webp",caption:"comissions"},
+            {src:"../assets/crochet/2-12.webp",caption:"comissions"},
+        ]}
 
+  ];
+  document.querySelectorAll(".carousel-container").forEach((carousel, index) => {
+    let currentIndex = 0;
+    const images = carouselsData[index].images;
+    const imgElement = carousel.querySelector(".carousel-image");
+    const captionElement = carousel.querySelector(".carousel-caption");
+    const subcap = carousel.querySelector(".carousel-subcap");
+    const prevButton = carousel.querySelector(".prev");
+    const nextButton = carousel.querySelector(".next");
 
+    function updateCarousel() {
+        imgElement.src = images[currentIndex].src;
+        captionElement.textContent = images[currentIndex].caption;
+        if (images[currentIndex].subcap) {
+            subcap.style.visibility = "visible";
+            subcap.textContent = images[currentIndex].subcap;
+        } else {
+            subcap.style.visibility = "hidden";
+        }
+    }
 
+    prevButton.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around
+        updateCarousel();
+    });
 
-            
-           
+    nextButton.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length; // Wrap around
+        updateCarousel();
+    });
 
-        ];
+    // Initialize first image
+    updateCarousel();
+});
+
+  /*
       let index=0;
       const imgElement = document.getElementById("carousel-image");
         const captionElement = document.getElementById("carousel-caption");
@@ -134,6 +220,7 @@
             index = (index + 1) % gallery.length; // Wrap around
             updateCarousel();
         });
+        */
 
 /*
 

@@ -9,6 +9,8 @@ module.exports = {
       colors:{
         base:'#F1F1F1',
         puce:'#b48291',
+        magenta:'#74226c',
+        newpurp:'#816e94',
         eggplant:'#493843',
         viridian:'#4c8577',
         hgreen:'#4e6e58',
