@@ -40,7 +40,7 @@
         @apply text-base text-viridian group-hover:text-sage;
       }
       .card{
-        @apply flex flex-col w-full p-4 border-viridian border-[1px] hover:border-red-300;
+        @apply flex flex-col w-[32%] px-4 pt-4 pb-0 text-wrap border-viridian border-[1px] hover:border-red-300;
       }
       /*py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4"*/
       .card-title{
@@ -113,6 +113,10 @@
       .image-article{
        @apply pt-4 pb-4  container block text-left mx-auto space-y-0;
       }
+      .techwidget{
+        @apply  border !codefont border-green-400 !text-[#579a6c] group-hover:!text-red-300 group-hover:!bg-red-300 group-hover:!bg-opacity-10 group-hover:border-red-300  !bg-opacity-60 text-xs p-[2px] px-1 rounded-md shadow-md   ;
+
+      }
 }
 @layer utilities{
     .grid-type{
@@ -120,5 +124,10 @@
     width:100%;
     gap:32px;
     /*display:flex;*/
+}
+.codefont{
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace!important;
+  text-shadow:0 1px #fff;
+
 }
 }
