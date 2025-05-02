@@ -734,6 +734,12 @@ video {
   border-color: rgb(252 165 165 / var(--tw-border-opacity, 1));
 }
 
+@media not all and (min-width: 640px) {
+  .card {
+    width: 100% !important;
+  }
+}
+
 /*py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4"*/
 
 .card-title {
@@ -825,6 +831,13 @@ video {
   text-align: left;
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
+@media not all and (min-width: 640px) {
+  .poem-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .preview-poem-container {
@@ -1179,6 +1192,11 @@ video {
   margin-right: auto;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1275,6 +1293,10 @@ video {
 
 .h-\[300px\] {
   height: 300px;
+}
+
+.h-\[80\%\] {
+  height: 80%;
 }
 
 .h-fit {
@@ -2188,10 +2210,29 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .max-sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-sm\:gap-y-4 {
+    row-gap: 1rem;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sm\:h-\[400px\] {
+    height: 400px;
   }
 
   .sm\:w-1\/5 {
@@ -2227,6 +2268,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:h-\[500px\] {
+    height: 500px;
+  }
+
   @media not all and (min-width: 1024px) {
     .md\:max-lg\:w-\[50\%\] {
       width: 50%;
@@ -2235,6 +2280,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-\[600px\] {
+    height: 600px;
+  }
+
   @media not all and (min-width: 1280px) {
     .lg\:max-xl\:w-\[40\%\] {
       width: 40%;
