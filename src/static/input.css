@@ -40,7 +40,7 @@
         @apply text-base text-viridian group-hover:text-sage;
       }
       .card{
-        @apply flex flex-col w-[32%] px-4 pt-4 pb-0 text-wrap border-viridian border-[1px] hover:border-red-300;
+        @apply flex flex-col w-[32%] px-4 pt-4 pb-0 text-wrap border-viridian border-[1px] max-sm:!w-full hover:border-red-300;
       }
       /*py-2 justify-normal items-stretch min-h-max flex flex-row flex-wrap gap-y-5 gap-x-4"*/
       .card-title{
@@ -52,7 +52,7 @@
         @apply flex flex-row flex-wrap items-center justify-center gap-y-4 gap-x-4 
       }
       .poem-container{
-        @apply text-gray-700 container block text-left mx-auto space-y-1 mb-2 px-40 py-4;
+        @apply text-gray-700 container block text-left mx-auto space-y-1 mb-2 px-40 py-4 max-sm:px-8;
       }
       .preview-poem-container{ 
         @apply  border-b  pt-4 pb-4 text-gray-700 container block text-left mx-auto space-y-0 ;}
@@ -60,7 +60,7 @@
         @apply font-bold text-left;
       }
       .poem-para{
-        @apply mb-4 mt-0;
+        @apply mb-4 mt-0 ;
       }
       .poetry-preview{
         @apply text-left text-gray-700;
